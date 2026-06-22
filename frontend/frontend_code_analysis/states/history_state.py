@@ -7,6 +7,13 @@ from typing import TypedDict
 import reflex as rx
 
 
+import sys
+import os
+# Ensure parent project root is in Python path for algorithms, parser, and database imports
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+
 # Try real database backend
 DB_AVAILABLE = False
 DB_NOTE = ""
