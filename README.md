@@ -1,1 +1,1 @@
-live manage the project using python ready
+python live manage the project using python ready
